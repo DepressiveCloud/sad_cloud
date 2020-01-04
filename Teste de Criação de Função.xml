@@ -1,0 +1,102 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <variables>
+    <variable type="" id="-,DLT3k_E{R~;F-a#fUF">LDP</variable>
+  </variables>
+  <block type="tick_analysis" id="(T(d4R,x!{ki6LgK~+3x" x="862" y="-29">
+    <statement name="TICKANALYSIS_STACK">
+      <block type="controls_if" id=")?#a9?Ut]*IT`hU(LlLq">
+        <value name="IF0">
+          <block type="logic_operation" id="0KnWR!58J9w[x7{a34X1" inline="false">
+            <field name="OP">OR</field>
+            <value name="A">
+              <block type="logic_compare" id="S_M5^h.=NrP6~4|]V5Yw">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="last_digit" id=",osS~RO,`]I8t9)EBt#v"></block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="w-8l0(`t$)s0oP;z(+xB">
+                    <field name="NUM">7</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_operation" id="?_2.S5YdYF/P8eDfGXIC" inline="false">
+                <field name="OP">OR</field>
+                <value name="A">
+                  <block type="logic_compare" id="^+?Bt(c{D[@H(1,yKunq">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="last_digit" id="rmiUyEYkE_uuRJ?x#eIi"></block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="_~K-Yvhx.[nega!Ej0Os">
+                        <field name="NUM">8</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="logic_compare" id="~)g+1jQJYA_9D3?7tbk$">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="last_digit" id="=t@+OP##DHDKrLvr;iNX"></block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="t0^`wD]rPkUa24Kj~(Xi">
+                        <field name="NUM">9</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="T4^jqEq9W8^hA0P9BiJ-">
+            <field name="VAR" id="-,DLT3k_E{R~;F-a#fUF" variabletype="">LDP</field>
+            <value name="VALUE">
+              <block type="math_on_list" id="m_VzudPR-0C8qk|W!p2B">
+                <mutation op="AVERAGE"></mutation>
+                <field name="OP">AVERAGE</field>
+                <value name="LIST">
+                  <block type="lists_create_with" id="T5BZmsgMn.AJjlnu5Je.">
+                    <mutation items="2"></mutation>
+                    <value name="ADD0">
+                      <block type="logic_compare" id="w{Z@{PdRYaU33|_xBXF@">
+                        <field name="OP">LTE</field>
+                        <value name="A">
+                          <block type="last_digit" id="7$x0ZI]uQ;b;v7BP;.~O"></block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="[d48K!FN3]idJ?1hpzVO">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="logic_compare" id="Eb{aR8kxsWQ}D^.F#/t0">
+                        <field name="OP">NEQ</field>
+                        <value name="A">
+                          <block type="last_digit" id="kQNiyJ:gFaZOxT).!om#"></block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="u2xE,YEn[qF,~.`q=fR:">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
